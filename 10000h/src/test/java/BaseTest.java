@@ -5,7 +5,7 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 
 @Slf4j
-public class BaseTest {
+public abstract class BaseTest {
 
     public WebDriver driver;
 
