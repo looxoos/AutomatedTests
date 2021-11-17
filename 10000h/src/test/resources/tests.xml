@@ -4,8 +4,13 @@
     <test name="Test">
 <!--        <parameter name="emailid" value="tester456@gmail.com"/>-->
 <!--        <parameter name="password" value="test@123"/>-->
+<!--        <groups>-->
+<!--            <run>-->
+<!--                <include name="debug"/>-->
+<!--            </run>-->
+<!--        </groups>-->
         <classes>
-            <class name="BaseTest"/>
+            <class name="FirstTestTemplate"/>
         </classes>
     </test> <!-- Test -->
 </suite> <!-- Suite -->

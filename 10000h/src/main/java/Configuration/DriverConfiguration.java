@@ -1,22 +1,20 @@
 package Configuration;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
 public class DriverConfiguration {
 
     private static ChromeOptions options;
-    private static WebDriver driver;
 
     public static ChromeDriver setupDriver() {
-        driver = null;
+        chromeOptionConfiguration();
         WebDriverManager.chromedriver().setup();
         return new ChromeDriver(options);
     }
 
-    public static void chromeOptionConfiguration() {
+    private static void chromeOptionConfiguration() {
         options = new ChromeOptions();
         options.addArguments("start-maximized");
         options.addArguments("enable-automation");

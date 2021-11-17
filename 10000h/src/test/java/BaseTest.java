@@ -11,7 +11,6 @@ public abstract class BaseTest {
 
     @BeforeSuite
     public void setUp() {
-        DriverConfiguration.chromeOptionConfiguration();
         driver = DriverConfiguration.setupDriver();
     }
 
