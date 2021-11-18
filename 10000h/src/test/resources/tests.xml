@@ -1,16 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Suite">
-    <test name="Test">
+<suite name="Tests scenarios">
+    <test name="Web Links Verifications">
 <!--        <parameter name="emailid" value="tester456@gmail.com"/>-->
 <!--        <parameter name="password" value="test@123"/>-->
-<!--        <groups>-->
-<!--            <run>-->
-<!--                <include name="debug"/>-->
-<!--            </run>-->
-<!--        </groups>-->
         <classes>
-            <class name="FirstTestTemplate"/>
+            <class name="FirstTemplateTest"/>
         </classes>
     </test> <!-- Test -->
 </suite> <!-- Suite -->

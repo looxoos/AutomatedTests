@@ -1,4 +1,4 @@
-package Configuration;
+package configuration;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -7,11 +7,16 @@ import org.openqa.selenium.chrome.ChromeOptions;
 public class DriverConfiguration {
 
     private static ChromeOptions options;
+    public static ChromeDriver driver;
 
-    public static ChromeDriver setupDriver() {
+    public static void setupDriver() {
         chromeOptionConfiguration();
         WebDriverManager.chromedriver().setup();
-        return new ChromeDriver(options);
+        driver = new ChromeDriver(options);
+    }
+
+    public static void quitDriver() {
+        driver.quit();
     }
 
     private static void chromeOptionConfiguration() {
